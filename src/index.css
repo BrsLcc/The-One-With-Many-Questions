@@ -1,0 +1,259 @@
+/* 
+////////// Colors //////////  
+Primary: #8372aa
+Secondary: #9c8cd4
+Accent: #d2c385
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: calc(90vh - 40px);
+  margin: 20px auto;
+  width: 60rem;
+
+  background-color: #8372aa;
+  background: linear-gradient(to bottom right, rgb(131, 114, 170), #8372aa);
+  font-family: "Protest Riot";
+}
+
+.logo {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.start {
+  color: #fff;
+  font-size: 4rem;
+  background-color: #d2c385;
+  font-family: "Protest Riot";
+  letter-spacing: 0.5rem;
+
+  margin: 25rem auto;
+  display: block;
+
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100px;
+  border: none;
+
+  box-shadow: 0 0 0 0 rgba(210, 195, 133, 0.1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+.start:hover {
+  cursor: pointer;
+  /* box-shadow: 0 0 0 0 rgba(210, 195, 133, 0.1);
+  transform: scale(1);
+  animation: pulse 2s infinite; */
+}
+
+/* .fade-enter {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fade-active {
+  opacity: 1;
+} */
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(210, 195, 133, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(210, 195, 133, 0.1);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+/* .main-image {
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 9) 100%
+    ),
+    url("friends.jpg");
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+
+  margin-bottom: 2rem;
+} */
+
+.question {
+  min-height: 15rem;
+  font-size: 2.6rem;
+  color: #d2c385;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 2rem;
+}
+
+.answers {
+  margin-bottom: 1rem;
+}
+
+li {
+  font-size: 2rem;
+  width: 40rem;
+  height: 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+  color: #d2c385;
+  background-color: rgba(154, 140, 212, 0.5);
+  /* padding: 4rem 10rem; */
+  border-radius: 5px;
+
+  position: relative;
+  transition: all 0.3s;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+  margin-bottom: 1rem;
+}
+
+li:hover {
+  cursor: pointer;
+  /* background-color: #8372aa; */
+  /* border: 1px solid #d2c385; */
+}
+
+li:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.answer-correct {
+  background-color: #7baa72;
+  color: #423d29;
+}
+
+.answer-wrong {
+  background-color: #aa7272;
+  color: #423d29;
+}
+
+.menu {
+  font-size: 2rem;
+  color: #d2c385;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 1rem;
+}
+
+/* .menu span:last-child {
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 150px;
+  background-color: #d2c385;
+  color: #fff;
+} */
+
+.restart {
+  font-family: inherit;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #9c8cd4;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.restart:hover {
+  cursor: pointer;
+}
+
+.restart:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.end-screen {
+  font-size: 2.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 50px;
+}
+
+.end-screen strong {
+  color: #d2c385;
+}
+
+@media (max-width: 500px) {
+  body {
+    width: 30rem;
+  }
+
+  .logo {
+    margin-bottom: 2rem;
+  }
+
+  /* .main-image {
+    width: 100%;
+  } */
+
+  .question {
+    margin-bottom: 0.5rem;
+  }
+
+  .start {
+    margin: 20rem auto;
+    font-size: 4rem;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .answers {
+    margin-bottom: 2rem;
+  }
+
+  li {
+    font-size: 2rem;
+    width: 25rem;
+    height: 8rem;
+  }
+}
