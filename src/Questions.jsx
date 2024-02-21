@@ -807,7 +807,7 @@ const questions = [
     question:
       "What is the name of Chandler and Monica's cleaning lady, whom they suspect of stealing?",
     answers: [
-      { answer: "Brenda", correct: false },
+      { answer: "Emily", correct: false },
       { answer: "Molly", correct: false },
       { answer: "Alicia", correct: false },
       { answer: "Brenda", correct: true },
@@ -880,7 +880,7 @@ const questions = [
   {
     id: 86,
     question:
-      "What job does Monica say Chandler has when she's trying to keep their relationship a secret?",
+      "What was Rachel's answer to the question what is Chandler Bing's job?",
     answers: [
       { answer: "Transponster", correct: true },
       { answer: "Data analyst", correct: false },
@@ -916,7 +916,7 @@ const questions = [
     id: 89,
     question: "Who does Monica and Chandler run into at the fertility clinic?",
     answers: [
-      { answer: "Joey", correct: false },
+      { answer: "Ross", correct: false },
       { answer: "Richard", correct: false },
       { answer: "Joey", correct: false },
       { answer: "Janice", correct: true },
