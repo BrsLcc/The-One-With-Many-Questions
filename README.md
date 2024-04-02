@@ -8,7 +8,7 @@ The code will eventually be refactored as well each component should be separate
 
 ## Live Version
 
-[Live Version of the App](https://theonewithallthequestions.netlify.app/)
+[Live Version of the App](https://the-one-with-many-questions.netlify.app/)
 
 ## Features
 
