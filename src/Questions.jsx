@@ -134,10 +134,10 @@ const questions = [
     id: 14,
     question: "Who is the manager of Central Perk?",
     answers: [
-      { answer: "Gunther", correct: true },
-      { answer: "Terry", correct: false },
+      { answer: "John", correct: false },
+      { answer: "Terry", correct: true },
       { answer: "Rachel", correct: false },
-      { answer: "Monica", correct: false },
+      { answer: "Steve", correct: false },
     ],
   },
   {
@@ -204,8 +204,8 @@ const questions = [
     id: 21,
     question: "What is the giant poking device made of?",
     answers: [
-      { answer: "Chopsticks", correct: true },
       { answer: "Straws", correct: false },
+      { answer: "Chopsticks", correct: true },
       { answer: "Pencils", correct: false },
       { answer: "Spoons", correct: false },
     ],
@@ -214,9 +214,9 @@ const questions = [
     id: 22,
     question: "What is Joey's favorite food?",
     answers: [
-      { answer: "Sandwiches", correct: true },
       { answer: "Pizza", correct: false },
       { answer: "Lasagna", correct: false },
+      { answer: "Sandwiches", correct: true },
       { answer: "Ice Cream", correct: false },
     ],
   },
@@ -296,10 +296,10 @@ const questions = [
     id: 30,
     question: "What is Phoebe's signature song?",
     answers: [
-      { answer: "Smelly Cat", correct: true },
       { answer: "Sticky Shoes", correct: false },
       { answer: "Holiday Song", correct: false },
       { answer: "Love Song", correct: false },
+      { answer: "Smelly Cat", correct: true },
     ],
   },
   {
@@ -327,9 +327,9 @@ const questions = [
     id: 33,
     question: "What is the name of Joey's agent?",
     answers: [
-      { answer: "Estelle Leonard", correct: true },
       { answer: "Janice Litman", correct: false },
       { answer: "Carol Willick", correct: false },
+      { answer: "Estelle Leonard", correct: true },
       { answer: "Nora Tyler Bing", correct: false },
     ],
   },
@@ -382,8 +382,8 @@ const questions = [
     question:
       "What is the name of the coffee shop where the group spends a lot of their time?",
     answers: [
-      { answer: "Central Perk", correct: true },
       { answer: "Coffee Time", correct: false },
+      { answer: "Central Perk", correct: true },
       { answer: "The Espresso Room", correct: false },
       { answer: "Brew Buddies", correct: false },
     ],
@@ -393,8 +393,8 @@ const questions = [
     question:
       "In 'The One with All the Cheesecakes', who did the cheesecake originally belong to?",
     answers: [
-      { answer: "Mrs. Braverman", correct: true },
       { answer: "Chandler Bing", correct: false },
+      { answer: "Mrs. Braverman", correct: true },
       { answer: "Joey Tribbiani", correct: false },
       { answer: "Rachel Green", correct: false },
     ],
@@ -404,10 +404,10 @@ const questions = [
     question:
       "Which character says, 'It’s not that common, it doesn’t happen to every guy, and it is a big deal!'?",
     answers: [
-      { answer: "Rachel", correct: true },
       { answer: "Monica", correct: false },
       { answer: "Chandler", correct: false },
       { answer: "Phoebe", correct: false },
+      { answer: "Rachel", correct: true },
     ],
   },
   {
@@ -415,18 +415,18 @@ const questions = [
     question:
       "What is the name of the character Bruce Willis plays, who dates Rachel?",
     answers: [
-      { answer: "Paul Stevens", correct: true },
       { answer: "Nick Stevens", correct: false },
       { answer: "Richard Burke", correct: false },
       { answer: "Joshua Burgin", correct: false },
+      { answer: "Paul Stevens", correct: true },
     ],
   },
   {
     id: 42,
     question: "What is the name of Ross's monkey?",
     answers: [
-      { answer: "Marcel", correct: true },
       { answer: "Maurice", correct: false },
+      { answer: "Marcel", correct: true },
       { answer: "Max", correct: false },
       { answer: "Milo", correct: false },
     ],
@@ -446,9 +446,9 @@ const questions = [
     id: 44,
     question: "Which character gets a job at Ralph Lauren?",
     answers: [
-      { answer: "Rachel", correct: true },
       { answer: "Monica", correct: false },
       { answer: "Joey", correct: false },
+      { answer: "Rachel", correct: true },
       { answer: "Phoebe", correct: false },
     ],
   },
@@ -456,9 +456,9 @@ const questions = [
     id: 45,
     question: "What does Ross say his 'Unagi' is?",
     answers: [
-      { answer: "A state of total awareness", correct: true },
       { answer: "A type of sushi", correct: false },
       { answer: "A martial arts move", correct: false },
+      { answer: "A state of total awareness", correct: true },
       { answer: "A Japanese dessert", correct: false },
     ],
   },
@@ -477,9 +477,9 @@ const questions = [
     id: 47,
     question: "What job does Chandler take up in Tulsa?",
     answers: [
-      { answer: "Data processing", correct: true },
       { answer: "Marketing", correct: false },
       { answer: "Banking", correct: false },
+      { answer: "Data processing", correct: true },
       { answer: "Chef", correct: false },
     ],
   },
@@ -488,8 +488,8 @@ const questions = [
     question:
       "What is the name of the neighbor who leaves everything to Monica and Rachel when he dies?",
     answers: [
-      { answer: "Mr. Heckles", correct: true },
       { answer: "Mr. Treeger", correct: false },
+      { answer: "Mr. Heckles", correct: true },
       { answer: "Mr. Zelner", correct: false },
       { answer: "Mr. Geller", correct: false },
     ],
@@ -570,8 +570,8 @@ const questions = [
     question:
       "What is the profession of Joey's character Dr. Drake Ramoray on 'Days of Our Lives'?",
     answers: [
-      { answer: "Neurosurgeon", correct: true },
       { answer: "Cardiologist", correct: false },
+      { answer: "Neurosurgeon", correct: true },
       { answer: "Dermatologist", correct: false },
       { answer: "Pediatrician", correct: false },
     ],
@@ -654,8 +654,8 @@ const questions = [
     question:
       "What does Ross say Rachel's traditional English trifle tastes like?",
     answers: [
-      { answer: "Feet", correct: true },
       { answer: "Garbage", correct: false },
+      { answer: "Feet", correct: true },
       { answer: "Heaven", correct: false },
       { answer: "A weird taco", correct: false },
     ],
@@ -674,9 +674,9 @@ const questions = [
     id: 66,
     question: "What does Chandler's dad do for a living?",
     answers: [
-      { answer: "Drag queen", correct: true },
       { answer: "Lawyer", correct: false },
       { answer: "Chef", correct: false },
+      { answer: "Drag queen", correct: true },
       { answer: "Circus performer", correct: false },
     ],
   },
@@ -694,8 +694,8 @@ const questions = [
     id: 68,
     question: "Which character accidentally sets fire to Phoebe’s dollhouse?",
     answers: [
-      { answer: "Rachel", correct: true },
       { answer: "Monica", correct: false },
+      { answer: "Rachel", correct: true },
       { answer: "Joey", correct: false },
       { answer: "Ross", correct: false },
     ],
@@ -1030,8 +1030,8 @@ const questions = [
     id: 100,
     question: "Who gets a tattoo, much to Ross's surprise, and what is it of?",
     answers: [
+      { answer: "Phoebe, a puppy", correct: false },
       { answer: "Rachel, a heart", correct: true },
-      { answer: "Phoebe, a world", correct: false },
       { answer: "Joey, a dragon", correct: false },
       { answer: "Monica, a star", correct: false },
     ],

@@ -97,10 +97,15 @@ function Quiz({
 }) {
   const curQuestion = questions[curQuestionsIndex];
   const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [isAnswering, setIsAnswering] = useState(false);
 
   // Handles answer selection and moves to the next question or ends the quiz.
   function handleAnswer(isCorrect, i) {
+    if (isAnswering) return;
+
+    setIsAnswering(true);
     setSelectedAnswer(i);
+
     if (curQuestionsIndex >= questions.length - 1) {
       onQuizEnded(true);
     }
@@ -112,6 +117,8 @@ function Quiz({
     setTimeout(() => {
       setCurQuestionIndex(curQuestionsIndex + 1);
       setSelectedAnswer(null);
+      setIsAnswering(false);
+      // disabled
     }, 1500);
   }
 
